@@ -1,5 +1,5 @@
 {
-  "name": "platzivideo",
+  "name": "platzivideo-secured",
   "version": 2,
   "builds": [{ "src": "index.js", "use": "@now/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
@@ -7,6 +7,9 @@
     "DB_USER": "@platzivideos-db-user",
     "DB_PASSWORD": "@platzivideos-db-password",
     "DB_HOST": "@platzivideos-db-host",
-    "DB_NAME": "@platzivideos-db-name"
+    "DB_NAME": "@platzivideos-db-name",
+    "AUTH_JWT_SECRET": "@platzivideo-auth-jwt-secret",
+    "PUBLIC_API_KEY_TOKEN": "@platzivideo-public-api-key-token",
+    "ADMIN_API_KEY_TOKEN": "@platzivideo-admin-api-key-token"
   }
 }
