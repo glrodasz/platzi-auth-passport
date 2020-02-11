@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "^7.4.2",
-    "@hapi/joi": "^15.1.0",
+    "@hapi/joi": "^15.1.1",
     "bcrypt": "^3.0.6",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
