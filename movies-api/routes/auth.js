@@ -33,18 +33,18 @@ function authApi(app) {
     passport.authenticate('basic', function(error, user) {
       try {
         if (error || !user) {
-          next(boom.unauthorized());
+          return next(boom.unauthorized());
         }
 
         req.login(user, { session: false }, async function(error) {
           if (error) {
-            next(error);
+            return next(error);
           }
 
           const apiKey = await apiKeysService.getApiKey({ token: apiKeyToken });
 
           if (!apiKey) {
-            next(boom.unauthorized());
+            return next(boom.unauthorized());
           }
 
           const { _id: id, name, email } = user;
