@@ -24,7 +24,7 @@
     "mongodb": "^3.2.7",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.1"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
